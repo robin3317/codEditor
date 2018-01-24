@@ -13,7 +13,7 @@ body {
 }
 
 #buttonContainer {
-  width: 800px;
+  width: 225px;
   margin: 0 auto;
 }
 
@@ -22,9 +22,10 @@ body {
 border manually------*/
 .toggleButton {
   float: left;
-  padding: 4px;
+  padding: 5px;
   border: 1px solid grey;
   border-right: none; 
+  font-size: 90%;
 }
 
 #html {
@@ -41,4 +42,16 @@ border manually------*/
 /*----- all the button and logo also need to align in the same line, so use float: left------*/
 #logo {
   float: left;
+  font-weight: bold;
+  font-size: 28px;
+  color: blueviolet;
+}
+
+/*---initially html and output will be selected as active*/
+.active {
+  background-color: #D3D3D3; 
+}
+
+.highlightedButton {
+  background-color: grey;
 }
