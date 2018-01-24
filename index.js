@@ -11,4 +11,22 @@ $(".toggleButton").hover(function() {
 $(".toggleButton").click(function() {
   $(this).toggleClass("active");
   $(this).removeClass("highlightedButton");
+
+  let panelId = $(this).attr("id") + "Panel";
+  $("#" + panelId).toggleClass("hidden");
+
+  //show the active panel when we select any
+  let numberOfActivePanels = 4 - $(".hidden").length;
+  $(".panel").width(($(window).width()/numberOfActivePanels) - 15);
+
 });
+
+//panel - fixing height and width
+$(".panel").height($(window).height() - $("#header").height() -20);
+$(".panel").width(($(window).width()/2) - 15);
+
+//updating output
+$("iframe").contents().find("html").html($("#htmlPanel").val());
+$("textarea").on("change keyup paste", function() {
+  $("iframe").contents().find("html").html($("#htmlPanel").val());
+})

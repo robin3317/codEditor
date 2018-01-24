@@ -47,11 +47,42 @@ border manually------*/
   color: blueviolet;
 }
 
+/*made by*/
+#madeBy {
+  float: right;
+  font-size: 70%;
+  padding-top: 8px;
+  margin-right: 7px;
+}
+
 /*---initially html and output will be selected as active*/
 .active {
   background-color: #D3D3D3; 
 }
 
+/*highlightedButton class for selecting particular button*/
 .highlightedButton {
   background-color: grey;
+}
+
+/*textarea*/
+textarea {
+  resize: none;
+  border-top: none;
+}
+
+/*panel class*/
+.panel {
+  float: left;
+  border-left: none;
+}
+
+/*iframe*/
+iframe {
+  border: none;
+}
+
+/*initially css and javascript will be hidden*/
+.hidden {
+  display: none;
 }
