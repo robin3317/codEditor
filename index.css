@@ -1,0 +1,44 @@
+/*------set padding and margin 0 because, we can show our style perfectly ------*/
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  height: 30px;
+  background-color: #EEEEEE;
+  padding: 5px;
+}
+
+#buttonContainer {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/*----- all the button need to align in the same line, so use float: left------*/
+/*---border-right: none;  to avoid border duplication And we will custom style HTML-Output
+border manually------*/
+.toggleButton {
+  float: left;
+  padding: 4px;
+  border: 1px solid grey;
+  border-right: none; 
+}
+
+#html {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#output {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid grey;
+}
+
+/*----- all the button and logo also need to align in the same line, so use float: left------*/
+#logo {
+  float: left;
+}
